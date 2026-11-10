@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project source="5.0.0" version="1.0">
+  This file is intended to be loaded by Logisim-evolution v5.0.0(https://github.com/logisim-evolution/).
+
+  <lib desc="#Wiring" name="0">
+    <tool name="Pin">
+      <a name="appearance" val="classic"/>
+    </tool>
+  </lib>
+  <lib desc="#Gates" name="1"/>
+  <lib desc="#Plexers" name="2"/>
+  <lib desc="#Arithmetic" name="3"/>
+  <lib desc="#FPArithmetic" name="4"/>
+  <lib desc="#Memory" name="5"/>
+  <lib desc="#I/O" name="6"/>
+  <lib desc="#TTL" name="7"/>
+  <lib desc="#TCL" name="8"/>
+  <lib desc="#Base" name="9"/>
+  <lib desc="#BFH-Praktika" name="10"/>
+  <lib desc="#Input/Output-Extra" name="11"/>
+  <lib desc="#Soc" name="12"/>
+  <main name="main"/>
+  <options>
+    <a name="gateUndefined" val="ignore"/>
+    <a name="simlimit" val="1000"/>
+    <a name="simrand" val="0"/>
+  </options>
+  <mappings>
+    <tool map="Button2" name="Poke Tool"/>
+    <tool map="Button3" name="Menu Tool"/>
+    <tool map="Ctrl Button1" name="Menu Tool"/>
+  </mappings>
+  <toolbar>
+    <tool name="Poke Tool"/>
+    <tool name="Edit Tool"/>
+    <tool name="Wiring Tool"/>
+    <tool name="Text Tool"/>
+    <tool name="Image"/>
+    <sep/>
+    <tool name="Pin"/>
+    <tool name="Pin">
+      <a name="facing" val="west"/>
+      <a name="type" val="output"/>
+    </tool>
+    <sep/>
+    <tool name="NOT Gate"/>
+    <tool name="AND Gate"/>
+    <tool name="OR Gate"/>
+    <tool name="XOR Gate"/>
+    <tool name="NAND Gate"/>
+    <tool name="NOR Gate"/>
+    <sep/>
+    <tool name="D Flip-Flop"/>
+    <tool name="Register"/>
+  </toolbar>
+  <circuit name="main">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="main"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(230,480)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="CLK1"/>
+    </comp>
+    <comp lib="0" loc="(270,290)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="D1"/>
+    </comp>
+    <comp lib="0" loc="(990,370)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Q1"/>
+      <a name="type" val="output"/>
+    </comp>
+    <comp lib="0" loc="(990,520)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="QN1"/>
+      <a name="type" val="output"/>
+    </comp>
+    <comp lib="1" loc="(280,480)" name="NOT Gate"/>
+    <comp lib="1" loc="(330,390)" name="NOT Gate">
+      <a name="facing" val="south"/>
+    </comp>
+    <comp lib="1" loc="(430,310)" name="NAND Gate"/>
+    <comp lib="1" loc="(440,500)" name="NAND Gate"/>
+    <comp lib="1" loc="(560,330)" name="NAND Gate"/>
+    <comp lib="1" loc="(560,480)" name="NAND Gate"/>
+    <comp lib="1" loc="(580,530)" name="NOT Gate"/>
+    <comp lib="1" loc="(690,430)" name="NOT Gate">
+      <a name="facing" val="south"/>
+    </comp>
+    <comp lib="1" loc="(790,350)" name="NAND Gate"/>
+    <comp lib="1" loc="(800,550)" name="NAND Gate"/>
+    <comp lib="1" loc="(920,370)" name="NAND Gate"/>
+    <comp lib="1" loc="(920,520)" name="NAND Gate"/>
+    <comp lib="9" loc="(560,595)" name="Text">
+      <a name="text" val="D flip-flop"/>
+    </comp>
+    <wire from="(230,480)" to="(250,480)"/>
+    <wire from="(270,290)" to="(330,290)"/>
+    <wire from="(280,480)" to="(310,480)"/>
+    <wire from="(310,480)" to="(310,530)"/>
+    <wire from="(310,480)" to="(360,480)"/>
+    <wire from="(310,530)" to="(550,530)"/>
+    <wire from="(330,290)" to="(330,360)"/>
+    <wire from="(330,290)" to="(370,290)"/>
+    <wire from="(330,390)" to="(330,520)"/>
+    <wire from="(330,520)" to="(380,520)"/>
+    <wire from="(360,330)" to="(360,480)"/>
+    <wire from="(360,330)" to="(370,330)"/>
+    <wire from="(360,480)" to="(380,480)"/>
+    <wire from="(430,310)" to="(500,310)"/>
+    <wire from="(440,500)" to="(500,500)"/>
+    <wire from="(480,350)" to="(480,400)"/>
+    <wire from="(480,350)" to="(500,350)"/>
+    <wire from="(480,400)" to="(580,400)"/>
+    <wire from="(500,420)" to="(500,460)"/>
+    <wire from="(500,420)" to="(610,420)"/>
+    <wire from="(560,330)" to="(610,330)"/>
+    <wire from="(560,480)" to="(580,480)"/>
+    <wire from="(580,400)" to="(580,480)"/>
+    <wire from="(580,530)" to="(720,530)"/>
+    <wire from="(610,330)" to="(610,420)"/>
+    <wire from="(610,330)" to="(690,330)"/>
+    <wire from="(690,330)" to="(690,400)"/>
+    <wire from="(690,330)" to="(730,330)"/>
+    <wire from="(690,430)" to="(690,570)"/>
+    <wire from="(690,570)" to="(740,570)"/>
+    <wire from="(720,370)" to="(720,530)"/>
+    <wire from="(720,370)" to="(730,370)"/>
+    <wire from="(720,530)" to="(740,530)"/>
+    <wire from="(790,350)" to="(860,350)"/>
+    <wire from="(800,550)" to="(810,550)"/>
+    <wire from="(810,540)" to="(810,550)"/>
+    <wire from="(810,540)" to="(860,540)"/>
+    <wire from="(840,390)" to="(840,430)"/>
+    <wire from="(840,390)" to="(860,390)"/>
+    <wire from="(840,430)" to="(960,430)"/>
+    <wire from="(850,460)" to="(850,500)"/>
+    <wire from="(850,460)" to="(940,460)"/>
+    <wire from="(850,500)" to="(860,500)"/>
+    <wire from="(920,370)" to="(940,370)"/>
+    <wire from="(920,520)" to="(960,520)"/>
+    <wire from="(940,370)" to="(940,460)"/>
+    <wire from="(940,370)" to="(990,370)"/>
+    <wire from="(960,430)" to="(960,520)"/>
+    <wire from="(960,520)" to="(990,520)"/>
+  </circuit>
+</project>
